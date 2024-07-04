@@ -1,0 +1,17 @@
+.nav-link {
+    position: relative;
+}
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #373A40;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.nav-link:hover::before {
+    width: 50%;
+    left: 25%;
+}
